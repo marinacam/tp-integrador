@@ -1,0 +1,25 @@
+#ba1{
+    width:auto;
+    height:auto;
+    object-fit: cover;
+    border-radius:0%;
+}
+
+
+#texto{
+    display: flex;
+    align-items:center;
+    justify-content:end;
+    min-height: 100vh;
+    overflow:auto;
+    padding-right: 10rem;
+}
+
+#colorcardhonolulu{
+    background-color: rgb(61, 61, 61);
+}
+
+#footer{
+    background-color: rgb(33, 93, 97);
+}
+
