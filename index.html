@@ -15,6 +15,7 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="style.css" type="text/css">
+
 </head>
 
 <body>
@@ -36,11 +37,11 @@
                         <a class="nav-link text-muted" href="#Ellugarylafecha">El lugar y la fecha</a>
                     </li>
                     <li class="nav-item">
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="#Convierteteenorador"">Conviertete en orador</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#Convierteteenorador"">Conviertete en orador</a>
                         </li>
-                        <li class="nav-item">
-                        <a class="nav-link text-success" href="#comprartickets">Comprar tickets</a>
+                        <li class=" nav-item">
+                            <a class="nav-link text-success" href="#comprartickets">Comprar tickets</a>
                     </li>
                 </ul>
             </div>
@@ -50,7 +51,7 @@
     <main>
         <section id="Laconferencia">
             <div class="card text-bg-dark text-withe">
-                <img src="ba1.jpg"  class="card-img opacity-50" img id="ba1" alt="paisaje bs as">
+                <img src="ba1.jpg" class="card-img opacity-50" img id="ba1" alt="paisaje bs as">
                 <div class="container">
                     <div id="texto" class="card-img-overlay text-end">
                         <div id="texto-conferencia">
@@ -65,7 +66,7 @@
                             </p>
                             <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
                             <button type="button" class="btn btn-success">Comprar tickets</button>
-    
+
                         </div>
 
                     </div>
@@ -77,7 +78,7 @@
         </section>
 
         <section id="Los oradores">
-            
+
             <div class="text-center">
                 <h5>Conoce a los</h5>
                 <h2>ORADORES</h2>
@@ -146,7 +147,7 @@
                                 principales ciudades estadouni denses. Aunque el nombre de Honolulu se refiere
                                 al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de
                                 Honolulu han formado una ciudad-condaddo consolidada que cubre toda la ciudad
-                                (aproximadamente 600km de superficie).
+                                aproximadamente 600km de superficie.
                             </p>
 
                             <button type="button" class="btn btn-outline-light">Conoce mas</button>
@@ -191,6 +192,92 @@
                 <button class="btn btn-success" type="submit">Enviar</button>
                 <br>
             </div>
+            <section id="comprartickets" class="container">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card h-100 card border-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Estudiante</h5>
+                                <p class="card-text">Tiene un descuento</p>
+                                <h5>80%</h5>
+                                <small class="text-muted">*presentar documentacion</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 card border-success mb-3" style="max-width: 18rem;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Trainee</h5>
+                                <p class="card-text">Tiene un descuento</p>
+                                <h5>50%</h5>
+                                <small class="text-muted">*presentar documentacion</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 card border-warning mb-3" style="max-width: 18rem;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Junior</h5>
+                                <p class="card-text">Tiene un descuento</p>
+                                <h5>15%</h5>
+                                <small class="text-muted">*presentar documentacion</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <br>
+                    <h6>VENTA</h6>
+                    <h1>VALOR DE TICKET $200</h1>
+                </div>
+
+                <form id="formulariotickets">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="nombre" aria-label="nombre">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="apellido" aria-label="apellido">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label"></label>
+                                <input type="email" class="form-control" placeholder="Correo">
+                            </div>
+                            <div class="row">
+                                <div class="col p-1">
+                                    <label for="cantidad-entradas">Cantidad</label>
+                                    <input type="number" class="form-control" id="cantidad-entradas">
+                                </div>
+                                <div class="col p-1">
+                                    <label for="categorias" class="form-label">Categoria</label>
+                                    <select id="categorias" class="form-select">
+                                        <option selected>Estudiante</option>
+                                        <option>Trainee</option>
+                                        <option>Junior</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row" id="liveAlertPlaceholder"></div>
+
+                            <div class="col p-1">
+                                <button type="reset" class="btn btn-success w-100"
+                                    style="background-color: chartreuse; border-color:chartreuse;">borrar</button>
+                            </div>
+
+                            <div class="col p-1">
+                                <button type="submit" id="livealertbtn" class="btn btn-success w-100"
+                                    style="background-color: chartreuse; border-color:chartreuse;">resumen</button>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </form>
+
+
+            </section>
 
             <footer>
                 <section id="footer">
@@ -213,7 +300,8 @@
         </section>
 
     </main>
-
+    <script src="script.js"></script>
+    
 </body>
 
 </html>
