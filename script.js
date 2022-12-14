@@ -32,6 +32,6 @@ boton.addEventListener("click", ()=>{
 let valor = TotalAPagar(cantidad,categorias)
 
 let  divresumen = document.getElementById("liveAlertPlaceholder")
-divresuemn.textcontent = "Total a pagar: $"+ valor
+divresumen.textcontent = "Total a pagar: $"+ valor
 }
 )
