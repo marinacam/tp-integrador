@@ -9,7 +9,7 @@ function TotalAPagar (CantidadTickets,categoria){
         case "Trainee":
           total = total - (total*50/100)
           break;
-        case "EJunior":
+        case "Junior":
           total = total - (total*15/100)
           break;
     }
