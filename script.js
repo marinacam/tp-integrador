@@ -1,8 +1,8 @@
-function TotalAPagar (CantidadTickets,categoria){
+function TotalAPagar (CantidadTickets,categorias){
     const valorTicket = 200;
     let total = CantidadTickets * valorTicket;
 
-    switch (categoria){
+    switch (categorias){
         case "Estudiante":
           total = total - (total*80/100)
           break;
@@ -27,7 +27,7 @@ formulario.addEventListener("submit", (e)=>{
 
 boton.addEventListener("click", ()=>{
      let cantidad = document.getElementById("cantidad-entradas").value
-     let categoria = document.getElementById("categorias").value
+     let categorias = document.getElementById("categorias").value
 
 let valor = TotalAPagar(cantidad,categorias)
 
